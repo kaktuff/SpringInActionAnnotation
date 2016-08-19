@@ -7,17 +7,22 @@ public class TestClass {
     public static void main(String[] args) throws Exception{
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-idol.xml");
 
+        System.out.println("New xml-file");
+
 //        Performer performer = (Performer)ctx.getBean("duke");
 //        performer.perform();
 //
 //        Performer performerUsingConstructor = (Performer)ctx.getBean("dukeUsingConstructor");
 //        performerUsingConstructor.perform();
 //
-//        Performer performerPoeticDuke = (Performer)ctx.getBean("poeticDuke");
+//        PoeticJuggler performerPoeticDuke = (PoeticJuggler)ctx.getBean("poeticDuke");
+//        System.out.println("performerPoeticDuke.getBeanBags " + performerPoeticDuke.getBeanBags());
 //        performerPoeticDuke.perform();
-
+//
         Performer kenny = (Performer)ctx.getBean("kenny");
         kenny.perform();
+        //Instrumentalist kennyInstrumentalist = (Instrumentalist)kenny;
+        //System.out.println("getInstrument - " + kennyInstrumentalist.getInstrument());
 
 //        Performer kennyPspace = (Performer)ctx.getBean("kennyPspace");
 //        kennyPspace.perform();

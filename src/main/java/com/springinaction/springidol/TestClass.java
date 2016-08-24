@@ -19,9 +19,10 @@ public class TestClass {
 //        System.out.println("performerPoeticDuke.getBeanBags " + performerPoeticDuke.getBeanBags());
 //        performerPoeticDuke.perform();
 //
-        Performer kenny = (Performer)ctx.getBean("kenny");
-        kenny.perform();
-        //Instrumentalist kennyInstrumentalist = (Instrumentalist)kenny;
+//        Performer kenny = (Performer)ctx.getBean("kenny");
+//        kenny.perform();
+
+        //InstrumentalistWithoutComponent kennyInstrumentalist = (InstrumentalistWithoutComponent)kenny;
         //System.out.println("getInstrument - " + kennyInstrumentalist.getInstrument());
 
 //        Performer kennyPspace = (Performer)ctx.getBean("kennyPspace");
@@ -81,6 +82,15 @@ public class TestClass {
 //            System.out.println(name);
 //        }
 
+
+
+
+
+//        Performer kenny = (Performer)ctx.getBean("eddie");
+//        kenny.perform();
+
+//        @Component
+//        guitar.play();
     }
 }
 

@@ -20,19 +20,15 @@
           class="com.springinaction.springidol.Piano"
     />
 
+    <bean id = "guitar" class="com.springinaction.springidol.Guitar"/>
+
     <bean id="kenny"
           class="com.springinaction.springidol.InstrumentalistWithoutComponent"
           autowire="byType">
-        <property name="song" value="Kenny Jingle Bells" />
+
         <property name="age" value="37" />
     </bean>
 
-    <bean id = "sonnet29"
-          class="com.springinaction.springidol.Sonnet29"/>
-
-    <bean id="poeticDuke"
-          class="com.springinaction.springidol.PoeticJuggler"
-          autowire="constructor">
-    </bean>
+    <util:properties id="systemProperties" location="classpath:system.properties"/>
 
 </beans>

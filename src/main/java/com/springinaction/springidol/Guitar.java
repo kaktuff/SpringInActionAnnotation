@@ -1,14 +1,17 @@
 package com.springinaction.springidol;
 
-import com.springinaction.springidol.qualifiers.StringedInstrument;
-
 // @Qualifier("stringed") // это стандартный механизм, когда так аннотируем и класс, который нужно выбрать, и параметр класса
-@StringedInstrument
+// @StringedInstrument
+
+// по умолчанию создастся объект с таким же именем как имя класса, только с мелком первой буквы
+// @Component
+// позже заменили аннотацию @Component для класса Guitar таким образом, чтобы создавались компоненты для всех классов, реализующих интерфейс Instrument
+
 public class Guitar implements Instrument{
     public Guitar() {
     }
 
     public void play() {
-        System.out.println("Guitar is playing Tryam");
+        System.out.println("Guitar is playing Strum-strum-strum");
     }
 }

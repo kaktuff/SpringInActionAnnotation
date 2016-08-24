@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Qualifier
-public @interface StringedInstrument {
+public @interface SkipIt {
 }

@@ -7,7 +7,9 @@ public class TestClass {
     public static void main(String[] args) throws Exception{
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-idol.xml");
 
-        System.out.println("New xml-file");
+        // System.out.println("New xml-file");
+        Performer kenny = (Performer)ctx.getBean("kenny");
+        kenny.perform();
 
 //        Performer performer = (Performer)ctx.getBean("duke");
 //        performer.perform();

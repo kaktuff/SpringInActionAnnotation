@@ -10,6 +10,16 @@ public class TestClass {
         // System.out.println("New xml-file");
         Performer kenny = (Performer)ctx.getBean("kenny");
         kenny.perform();
+/*
+        Performer eddie = (Performer)ctx.getBean("eddie");
+        eddie.perform();*/
+
+        // этот компонент был создан автоматически, т.к. в конфигурационном файлу обяъвлено:
+        // <context:include-filter type="assignable" expression="com.springinaction.springidol.Instrument"/>
+        Instrument guitar = (Instrument)ctx.getBean("guitar");
+        guitar.play();
+
+
 
 //        Performer performer = (Performer)ctx.getBean("duke");
 //        performer.perform();

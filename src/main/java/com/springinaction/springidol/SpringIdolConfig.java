@@ -19,9 +19,15 @@ public class SpringIdolConfig {
     }
 
     @Bean
+    public Guitar guitar(){return new Guitar();}
+
+    @Bean
     public Performer kenny(){
         Instrumentalist kenny = new Instrumentalist();
         kenny.setSong("Kenny Song bla-bla-bla-bla-bla");
+        // компонент guitar был создан автоматически, т.к. в конфигурационном файлу обяъвлено:
+        // <context:include-filter type="assignable" expression="com.springinaction.springidol.Instrument"/>
+        kenny.setInstrument(guitar());
         return kenny;
     }
 
